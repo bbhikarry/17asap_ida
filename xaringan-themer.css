@@ -15,7 +15,7 @@
  *    - xaringan wiki: https://github.com/yihui/xaringan/wiki
  *    - remarkjs wiki: https://github.com/gnab/remark/wiki
  *
- *  Version: 0.4.2
+ *  Version: 0.4.3
  *
  * ------------------------------------------------------- */
 @import url(https://fonts.googleapis.com/css?family=Noto+Sans:400,400i,700,700i&display=swap);
@@ -43,24 +43,22 @@
   --header-h3-font-size: 1.75rem;
 
   /* Colors */
-  --text-color: #000000;
-  --header-color: #1381B0;
-  --background-color: #FFFFFF;
-  --link-color: #1381B0;
-  --text-bold-color: #1381B0;
+  --text-color: #171717;
+  --header-color: #0000FF;
+  --background-color: #EBEDEF;
+  --link-color: #0000FF;
+  --text-bold-color: #0000FF;
   --code-highlight-color: rgba(255,255,0,0.5);
-  --inverse-text-color: #000000;
-  --inverse-background-color: #FF961C;
-  --inverse-header-color: #FFFFFF;
-  --inverse-link-color: #1381B0;
-  --title-slide-background-color: #1381B0;
-  --title-slide-text-color: #000000;
-  --header-background-color: #1381B0;
-  --header-background-text-color: #FFFFFF;
-  --primary: #1381B0;
-  --secondary: #FF961C;
-  --white: #FFFFFF;
-  --black: #000000;
+  --inverse-text-color: #EBEDEF;
+  --inverse-background-color: #0000FF;
+  --inverse-header-color: #F8F8F8;
+  --inverse-link-color: #0000FF;
+  --title-slide-background-color: #EBEDEF;
+  --title-slide-text-color: #0000FF;
+  --header-background-color: #0000FF;
+  --header-background-text-color: #EBEDEF;
+  --primary: #EBEDEF;
+  --secondary: #0000FF;
 }
 
 html {
@@ -101,10 +99,10 @@ h1, h2, h3 {
 }
 .remark-inline-code {
   font-size: var(--code-inline-font-size);
-  color: #1381B0;
+  color: #0000FF;
 }
 .remark-slide-number {
-  color: #1381B0;
+  color: #171717;
   opacity: 1;
   font-size: 0.9rem;
 }
@@ -152,10 +150,10 @@ a, a > code {
   float: left;
 }
 .left-column h2, .left-column h3 {
-  color: #1381B099;
+  color: #0000FF99;
 }
 .left-column h2:last-of-type, .left-column h3:last-child {
-  color: #1381B0;
+  color: #0000FF;
 }
 .right-column {
   width: 75%;
@@ -177,7 +175,7 @@ img, video, iframe {
   max-width: 100%;
 }
 blockquote {
-  border-left: solid 5px #FF961C80;
+  border-left: solid 5px #0000FF80;
   padding-left: 1em;
 }
 .remark-slide table {
@@ -194,7 +192,7 @@ th, td {
 .remark-slide table:not(.table-unshaded) thead,
 .remark-slide table:not(.table-unshaded) tfoot,
 .remark-slide table:not(.table-unshaded) tr:nth-child(even) {
-  background: #FFEAD1;
+  background: #FDFDFD;
 }
 table.dataTable tbody {
   background-color: var(--background-color);
@@ -204,7 +202,7 @@ table.dataTable.display tbody tr.odd {
   background-color: var(--background-color);
 }
 table.dataTable.display tbody tr.even {
-  background-color: #FFEAD1;
+  background-color: #FDFDFD;
 }
 table.dataTable.hover tbody tr:hover, table.dataTable.display tbody tr:hover {
   background-color: rgba(255, 255, 255, 0.5);
@@ -285,17 +283,5 @@ table.dataTable.hover tbody tr:hover, table.dataTable.display tbody tr:hover {
 }
 .bg-secondary {
   background-color: var(--secondary);
-}
-.white {
-  color: var(--white);
-}
-.bg-white {
-  background-color: var(--white);
-}
-.black {
-  color: var(--black);
-}
-.bg-black {
-  background-color: var(--black);
 }
 
